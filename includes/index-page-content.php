@@ -13,11 +13,7 @@
             <h1><span><span>Your orders</span></span></h1>
         </div>
         <div class="breather">
-            <div class="your-orders-filters aria-tabs" id="tabs-pointed">
-                <ul role="tablist">
-                    <li id="records-tab" class="selected tab" role="tab" aria-selected="true"><button id="current-orders">Current orders</button><span class="tri-down-fff"></span></li>
-                    <li id="record-creators-tab" class="tab" role="tab" aria-selected="false"><button id="past-orders">Previous orders</button><span class="tri-down-fff"></span></li>
-                </ul>
+            <div class="your-orders-filters">
                 <div class="breather date-filter">
                     <h3>View orders within the last:</h3>
                     <div class="date-filter-form">
