@@ -13,6 +13,22 @@
             <h1><span><span>Your orders</span></span></h1>
         </div>
         <div class="breather">
+            <div class="your-orders-filters aria-tabs" id="tabs-pointed">
+                <ul role="tablist">
+                    <li id="records-tab" class="selected tab" role="tab" aria-selected="true"><button id="current-orders">Current orders</button><span class="tri-down-fff"></span></li>
+                    <li id="record-creators-tab" class="tab" role="tab" aria-selected="false"><button id="past-orders">Previous orders</button><span class="tri-down-fff"></span></li>
+                </ul>
+                <div class="breather date-filter">
+                    <h3>Filter by date range</h3>
+                    <div class="date-filter-form">
+                        <form>
+                        <input type="date" placeholder="DD/MM/YYYY">
+                        <input type="date" placeholder="DD/MM/YYYY">
+                        <input type="submit" value="Filter">
+                        </form>
+                    </div>
+                </div>
+            </div>
             <ul id="your-orders">
                 <?php for ($i=0; $i < 5; $i++) {
                     $rand = "RC " . rand(1000000, 9000000) . " 15";
@@ -28,12 +44,20 @@
                     else {
                         printf("<h3><a href='#'>%s</a></h3>", $titles[$i]);
                     }
-                    printf("<h3>Order reference: %s</h3>", $rand);
+                    printf("<h3>Order Item ID: %s</h3>", $rand);
                     printf("<span class='format-type'><strong>%s</strong></span>", $randFormat);
                     printf("<p><strong>Date:</strong> %s</p>", $randDate);
                     printf("<p><strong>Price:</strong> %s</p>", $randPrice);
                     printf("<p><strong>Instructions:</strong> %s <a href='#'>read more</a></p>", $customerInst[$i]);
-                    print("<div class='status'>");
+                    if ($randFormat == "Digital download" && $randDigStatus == "Digital copy ready to download") {
+                        print("<div class='status action-this'>");
+                    }
+                    elseif ($randStatus == "Page check successful") {
+                        print("<div class='status action-this'>");
+                    }
+                    else {
+                        print("<div class='status'>");
+                    }
                     if ($randFormat == "Digital download") {
                         printf("<p class='status-type'><strong>Status:</strong> %s</p>", $randDigStatus);
                         if ($randDigStatus == "Digital copy ready to download") {
@@ -46,7 +70,7 @@
                     else {
                         printf("<p class='status-type'><strong>Status:</strong> %s</p>", $randStatus);
                         if ($randStatus == "Page check successful") {
-                            print("<a class='button' href='#'>Order</a>");
+                            print("<a class='button' href='#'>Order copy</a>");
                         }
                         else {
                             print("<a class='mail-button' href='#'>Enquire</a>");
@@ -55,6 +79,12 @@
                     print("</div></li>");
                 }
                 ?>
+            </ul>
+            <ul class="menu-disc">
+                <li><a class="active">1</a></li>
+                <li><a>2</a></li>
+                <li><a>3</a></li>
+                <li><a>&gt;</a></li>
             </ul>
         </div>
     </div>
