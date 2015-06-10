@@ -109,3 +109,12 @@ input[type=date] {
     border: 1px solid #ccc;
     padding: 5px 3px;
 }
+.menu-disc li {
+    width: 240px;
+    height: 240px;
+    border: 14px dotted #099099;
+}
+.menu-disc li a {
+    background-color: #ffff00;
+    color: #AC0000;
+}
