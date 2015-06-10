@@ -1,0 +1,98 @@
+ul.sibling li {
+    clear: both;
+}
+#your-orders span.format-type {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 1em;
+    background: #fce45c;
+    padding: 4px;
+    color: #000;
+    border-left: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+#your-orders span.status-type {
+    top: 0;
+    right: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 1em;
+    padding: 4px;
+    color: #000;
+    border: 1px solid #ddd;
+}
+#your-orders li {
+    padding: 1.5em 1em 1em 1em;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+a.button {
+    background: #383838;
+    color: #fff;
+    padding: 0.5em;
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+}
+a.mail-button {
+    background: #ccc;
+    color: #000;
+    padding: 0.5em;
+    display: inline-block;
+    min-width: 24px;
+    text-align: center;
+}
+#your-orders > li:hover {
+    background-color: #eee;
+}
+#your-orders .status {
+    /* padding: 0 1em 1em 1em;
+    border: 1px solid #ccc;
+    color: #cb0d07; */
+    border-left: 3px solid #2A5DB0;
+    padding-left: 14px;
+}
+#your-orders .action-this {
+    border-left: 3px solid #cb0d07;
+}
+ul#your-orders {
+    border-top: 1px solid #ddd;
+    margin-top: 0;
+}
+.menu-disc li {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 4px 4px 0;
+    display: inline-block;
+    width: auto;
+    float: left;
+}
+.menu-disc li a {
+    font-family: 'Bitter',Georgia, Verdana, Arial, Helvetica, serif;
+    font-size: 1.25em;
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    color: #FEFEFE;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 40px;
+}
+.menu-disc li a {
+    background-color: #008484;
+}
+.menu-disc li .active {
+    background-color: #ccc;
+}
+.date-filter {
+    background-color: #ddd;
+    margin-top: 14px;
+    padding: 1em;
+}
+input[type=date] {
+    border: 1px solid #ccc;
+    padding: 5px 3px;
+}
