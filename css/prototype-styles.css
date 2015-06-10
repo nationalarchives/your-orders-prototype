@@ -60,7 +60,6 @@ a.mail-button {
 }
 ul#your-orders {
     border-top: 1px solid #ddd;
-    margin-top: 0;
 }
 .menu-disc li {
     text-align: center;
@@ -87,12 +86,14 @@ ul#your-orders {
 .menu-disc li .active {
     background-color: #ccc;
 }
-.date-filter {
-    background-color: #ddd;
-    margin-top: 14px;
-    padding: 1em;
-}
 input[type=date] {
     border: 1px solid #ccc;
     padding: 5px 3px;
+}
+.order-container {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+.order-container h2 {
+    color: #111111;
 }
