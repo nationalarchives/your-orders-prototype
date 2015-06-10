@@ -19,12 +19,20 @@
                     <li id="record-creators-tab" class="tab" role="tab" aria-selected="false"><button id="past-orders">Previous orders</button><span class="tri-down-fff"></span></li>
                 </ul>
                 <div class="breather date-filter">
-                    <h3>Filter by date range</h3>
+                    <h3>View orders within the last:</h3>
                     <div class="date-filter-form">
                         <form>
+                            <div class="field-row">
+                                <label for="date" style="display:none;">See orders in the past: </label>
+                                <select>
+                                    <option value="0" label="3 months">3 months</option>
+                                    <option value="1" label="6 months">6 months</option>
+                                    <option value="2" label="12 months">12 months</option>
+                                </select>
+                            </div>
+                        <!-- <input type="date" placeholder="DD/MM/YYYY">
                         <input type="date" placeholder="DD/MM/YYYY">
-                        <input type="date" placeholder="DD/MM/YYYY">
-                        <input type="submit" value="Filter">
+                        <input type="submit" value="Filter"> -->
                         </form>
                     </div>
                 </div>
@@ -52,7 +60,10 @@
                     if ($randFormat == "Digital download" && $randDigStatus == "Digital copy ready to download") {
                         print("<div class='status action-this'>");
                     }
-                    elseif ($randStatus == "Page check successful") {
+                    elseif ($randFormat == "Record copy" && $randStatus == "Page check successful") {
+                        print("<div class='status action-this'>");
+                    }
+                    elseif ($randFormat == "Naturalisation certificate" && $randStatus == "Page check successful") {
                         print("<div class='status action-this'>");
                     }
                     else {
@@ -64,7 +75,7 @@
                             print("<a class='button' href='#'>Download</a>");
                         }
                         else {
-                            print("<a class='mail-button' href='#'>Enquire</a>");
+                            print("<a href='#'>Enquire</a>");
                         }
                     }
                     else {
@@ -73,7 +84,7 @@
                             print("<a class='button' href='#'>Order copy</a>");
                         }
                         else {
-                            print("<a class='mail-button' href='#'>Enquire</a>");
+                            print("<a href='#'>Enquire</a>");
                         }
                     }
                     print("</div></li>");
