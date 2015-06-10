@@ -14,10 +14,6 @@ ul.sibling li {
     border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-.frobscottle {
-    display: inline;
-    background-color: orange;
-}
 #your-orders span.status-type {
     top: 0;
     right: 0;
@@ -74,10 +70,6 @@ ul#your-orders {
     width: auto;
     float: left;
 }
-.snozcumber {
-    border-right: 9000px;
-    border-radius: 50%;
-}
 .menu-disc li a {
     font-family: 'Bitter',Georgia, Verdana, Arial, Helvetica, serif;
     font-size: 1.25em;
@@ -95,11 +87,6 @@ ul#your-orders {
 .menu-disc li .active {
     background-color: #ccc;
 }
-.bonecruncher {
-    height: 9000px;
-    font-size: large;
-    color: red;
-}
 .date-filter {
     background-color: #ddd;
     margin-top: 14px;
@@ -108,13 +95,4 @@ ul#your-orders {
 input[type=date] {
     border: 1px solid #ccc;
     padding: 5px 3px;
-}
-.menu-disc li {
-    width: 240px;
-    height: 240px;
-    border: 14px dotted #099099;
-}
-.menu-disc li a {
-    background-color: #ffff00;
-    color: #AC0000;
 }
