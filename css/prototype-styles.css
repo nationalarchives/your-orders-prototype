@@ -1,7 +1,7 @@
 ul.sibling li {
     clear: both;
 }
-#your-orders span.format-type {
+.your-order-items span.format-type {
     position: absolute;
     top: 0;
     right: 0;
@@ -14,7 +14,7 @@ ul.sibling li {
     border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-#your-orders span.status-type {
+.your-order-items span.status-type {
     top: 0;
     right: 0;
     font-family: 'Open Sans', sans-serif;
@@ -24,7 +24,7 @@ ul.sibling li {
     color: #000;
     border: 1px solid #ddd;
 }
-#your-orders li {
+.your-order-items li {
     padding: 1.5em 1em 1em 1em;
     border-bottom: 1px solid #ddd;
     position: relative;
@@ -45,20 +45,20 @@ a.mail-button {
     min-width: 24px;
     text-align: center;
 }
-#your-orders > li:hover {
+.your-order-items > li:hover {
     background-color: #eee;
 }
-#your-orders .status {
+.your-order-items .status {
     /* padding: 0 1em 1em 1em;
     border: 1px solid #ccc;
     color: #cb0d07; */
     border-left: 3px solid #2A5DB0;
     padding-left: 14px;
 }
-#your-orders .action-this {
+.your-order-items .action-this {
     border-left: 3px solid #cb0d07;
 }
-ul#your-orders {
+ul.your-order-items {
     border-top: 1px solid #ddd;
     margin-top: 0;
 }
@@ -88,11 +88,16 @@ ul#your-orders {
     background-color: #ccc;
 }
 .date-filter {
-    background-color: #ddd;
-    margin-top: 14px;
     padding: 1em;
 }
 input[type=date] {
     border: 1px solid #ccc;
     padding: 5px 3px;
+}
+.your-order {
+    border: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+.your-order h2 {
+    color: #000000;
 }
