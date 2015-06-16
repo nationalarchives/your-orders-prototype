@@ -21,6 +21,7 @@
                     </div>
                 </div>
             </div>
+            <?php $page = basename($_SERVER['REQUEST_URI']); if ($page == 'index.php' || $page == "/" || $page == '') { ?>
             <div class="your-order">
                 <div class="breather">
                     <div class="your-order-header">
@@ -31,9 +32,11 @@
                         printf("<p><strong>Date:</strong> %s</p>", $randDate);
                         ?>
                     </div>
+                    <?php } ?>
                     <ul class="your-order-items">
                         <?php require('index-page-order-loop.php'); ?>
                     </ul>
+                    <?php $page = basename($_SERVER['REQUEST_URI']); if ($page == 'index.php' || $page == "/" || $page == '') { ?>
                     <div class="your-order-summary">
                         <h3>Order 192837465 summary</h3>
                         <p>Sub total: £358.00</p>
@@ -42,27 +45,7 @@
                     </div>
                 </div>
             </div>
-            <div class="your-order">
-                <div class="breather">
-                    <div class="your-order-header">
-                        <?php
-                        $rand = "1/15/" . rand(1000000, 9000000) . "M";
-                        $randDate = rand(01, 29) . "/" . rand(01, 12) . "/2015";
-                        printf("<h2>Order reference:</strong> %s</h2>", $rand);
-                        printf("<p><strong>Date:</strong> %s</p>", $randDate);
-                        ?>
-                    </div>
-                    <ul class="your-order-items">
-                        <?php require('index-page-order-loop.php'); ?>
-                    </ul>
-                    <div class="your-order-summary">
-                        <h3>Order 192837465 summary</h3>
-                        <p>Sub total: £358.00</p>
-                        <p>Postage and packing: £0.00</p>
-                        <p><strong>Total: £358.00</strong></p>
-                    </div>
-                </div>
-            </div>
+            <?php } ?>
             <ul class="menu-disc">
                 <li><a class="active">1</a></li>
                 <li><a>2</a></li>

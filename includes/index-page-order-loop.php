@@ -7,7 +7,7 @@ $customerInst = array('Looking for information related to John Smith from...', '
 $natCertTitles = array('Beck, Daniel Frederick Christian, Cert 5353 issued 18 Feb 1867', 'Barsdorf, Solomon, Cert 2738 issued 11 Sept 1858', 'Anzarut, Jacob, Cert 5016 issued 26 Oct 1870', 'Fanty, Benno, Cert 5697 issued 24 Feb 1868', 'Edward, John, Cert 2700 issued 10 Jul 1858');
 ?>
 <?php
-    $randItems = rand(1, 5);
+    $randItems = rand(3, 5);
     for ($i=0; $i < $randItems; $i++) {
     $rand = "RC " . rand(1000000, 9000000) . " 15";
     $randPrice = "£" . rand(10, 120) . ".00";
