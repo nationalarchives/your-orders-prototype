@@ -22,8 +22,18 @@ $natCertTitles = array('Beck, Daniel Frederick Christian, Cert 5353 issued 18 Fe
         printf("<h3><a href='#'>%s</a></h3>", $titles[$i]);
     }
     printf("<h3>Order Item ID: %s</h3>", $rand);
+        $page = basename($_SERVER['REQUEST_URI']);
+        if ($page == 'index-alt.php') {
+            $randDate = rand(01, 29) . "/" . rand(01, 12) . "/2015";
+            printf("<p><strong>Date:</strong> %s</p>", $randDate);
+        }
     printf("<span class='format-type'><strong>%s</strong></span>", $randFormat);
-    printf("<p><strong>Price:</strong> %s</p>", $randPrice);
+    if ($randFormat == "Digital download") {
+        print("<strong>Price:</strong> &pound;3.30</p>");
+    }
+    else {
+        printf("<p><strong>Price:</strong> %s</p>", $randPrice);
+    }
     if ($randFormat == "Digital download") {
         print("<strong>Download details:</strong> Download size approximately 2MB<br><strong>Email address for digital item:</strong> test19@test.com</p>");
     }
