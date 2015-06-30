@@ -8,21 +8,26 @@ ul.sibling li {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     font-size: 1em;
-    background: #fce45c;
+    background: #EEEEEE;
     padding: 4px;
     color: #000;
     border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-.your-order-items span.status-type {
+.your-order-items p.status-type {
+    position: absolute;
     top: 0;
     right: 0;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    font-size: 1em;
-    padding: 4px;
+    padding: 4px 1em 4px 6px;
+    font-size: 0.8em;
     color: #000;
-    border: 1px solid #ddd;
+    background: #EEEEEE;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-bottom-left-radius: 5px;
 }
 .your-order-items li {
     padding: 1.5em 1em 1em 1em;
@@ -51,12 +56,9 @@ a.mail-button {
 .your-order-items .status {
     /* padding: 0 1em 1em 1em;
     border: 1px solid #ccc;
-    color: #cb0d07; */
-    border-left: 3px solid #2A5DB0;
-    padding-left: 14px;
-}
-.your-order-items .action-this {
-    border-left: 3px solid #cb0d07;
+    color: #cb0d07;
+    border-left: 3px solid #DDDDDD;
+    padding-left: 14px; */
 }
 ul.your-order-items {
     border-top: 1px solid #ddd;
@@ -100,4 +102,7 @@ input[type=date] {
 }
 .your-order h2 {
     color: #000000;
+}
+.status {
+    text-align: right;
 }

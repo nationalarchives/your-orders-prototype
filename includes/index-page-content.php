@@ -21,7 +21,7 @@
                     </div>
                 </div>
             </div>
-            <?php $page = basename($_SERVER['REQUEST_URI']); if ($page == 'index.php' || $page == "/" || $page == '') { ?>
+            <?php $page = basename($_SERVER['REQUEST_URI']); if ($page == 'index-alt.php') { ?>
             <div class="your-order">
                 <div class="breather">
                     <div class="your-order-header">
@@ -36,7 +36,7 @@
                     <ul class="your-order-items">
                         <?php require('index-page-order-loop.php'); ?>
                     </ul>
-                    <?php $page = basename($_SERVER['REQUEST_URI']); if ($page == 'index.php' || $page == "/" || $page == '') { ?>
+                    <?php $page = basename($_SERVER['REQUEST_URI']); if ($page == 'index-alt.php') { ?>
                     <div class="your-order-summary">
                         <h3>Order 192837465 summary</h3>
                         <p>Sub total: £358.00</p>
