@@ -106,3 +106,9 @@ input[type=date] {
 .status {
     text-align: right;
 }
+.morecontent span {
+    display: none;
+}
+.details {
+    display: none;
+}

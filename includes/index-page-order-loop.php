@@ -3,7 +3,7 @@ $titles = array('42ND DIVISION Reconnaissance Battalion', '1ST ARMOURED DIVISION
 $formats = array('Record copy', 'Digital download', 'Naturalisation certificate');
 $statuses = array('Page check in progress', 'Page check successful', 'Page check cancelled', 'Record copying in progress', 'Complete and dispatched');
 $digStatuses = array('Ready to download', 'Download expired');
-$customerInst = array('Looking for information related to John Smith from...', 'Locating any information related to Jane Smith from...', 'Looking for specific information related to...', 'Between dates March and April 1941...', 'Any information about the division from...');
+$customerInst = array('Looking for information related to John Smith.', 'Locating any information related to Jane Smith.', 'Looking for specific information related to the relationship of John and Jane Smith.', 'Between dates March and April 1941, looking for any references to John Smith.', 'Any information about the division between dates March and April 1941.');
 $natCertTitles = array('Beck, Daniel Frederick Christian, Cert 5353 issued 18 Feb 1867', 'Barsdorf, Solomon, Cert 2738 issued 11 Sept 1858', 'Anzarut, Jacob, Cert 5016 issued 26 Oct 1870', 'Fanty, Benno, Cert 5697 issued 24 Feb 1868', 'Edward, John, Cert 2700 issued 10 Jul 1858');
 ?>
 <?php
@@ -49,7 +49,7 @@ $natCertTitles = array('Beck, Daniel Frederick Christian, Cert 5353 issued 18 Fe
         print("<strong>Certified copy</strong></p>");
     }
     else {
-        printf("<p><strong>Instructions:</strong> %s <a href='#'>read&nbsp;more</a></p>", $customerInst[$i]);
+        printf("<p><a class='toggler'><span>+</span> Record details</a></p><div class='details'><p><strong>Instructions:</strong> <span class='comment more'>%s</span></p><p>Reference: ADM 1/1</p><p>Date: 1941-03</p></div>", $customerInst[$i]);
     }
         print("<a href='#'>Enquire about this order item</a>");
         print("</div>");

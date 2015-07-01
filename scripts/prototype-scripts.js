@@ -18,6 +18,12 @@ if($(".confirm-and-pay").length) {
 
 }
 
+$('a.toggler').click(function() {
+    var $this = $(this).find('span');
+    $this.text($this.text() == '+' ? '-' : '+');
+    $( ".details" ).toggle();
+});
+
 // Angular
 
 var app = angular.module("recordCopying", []);
