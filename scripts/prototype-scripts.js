@@ -21,8 +21,8 @@ if($(".confirm-and-pay").length) {
 $('a.toggler').click(function() {
     var $this = $(this).find('span');
     $this.text($this.text() == '+' ? '-' : '+');
-    $( ".details" ).toggle();
 });
+$.bindToggle({ toggler: 'a.toggler', target: '.details', hideToggleeOnLoad: 'true' });
 
 // Angular
 
