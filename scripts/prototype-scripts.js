@@ -22,7 +22,7 @@ $('a.toggler').click(function() {
     var $this = $(this).find('span');
     $this.text($this.text() == '+' ? '-' : '+');
 });
-$.bindToggle({ toggler: 'a.toggler', target: '.details', hideToggleeOnLoad: 'true' });
+$.bindToggle({ toggler: 'a.toggler', target: '.details', type: 'slide', hideToggleeOnLoad: 'true' });
 
 // Angular
 
