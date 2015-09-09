@@ -1,30 +1,35 @@
 ul.sibling li {
     clear: both;
 }
-#your-orders span.format-type {
+.your-order-items span.format-type {
     position: absolute;
     top: 0;
     right: 0;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     font-size: 1em;
-    background: #fce45c;
+    background: #EEEEEE;
     padding: 4px;
     color: #000;
     border-left: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-#your-orders span.status-type {
+.your-order-items p.status-type {
+    position: absolute;
     top: 0;
     right: 0;
     font-family: 'Open Sans', sans-serif;
     margin: 0;
-    font-size: 1em;
-    padding: 4px;
+    padding: 4px 1em 4px 6px;
+    font-size: 0.8em;
     color: #000;
-    border: 1px solid #ddd;
+    background: #EEEEEE;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-bottom-left-radius: 5px;
 }
-#your-orders li {
+.your-order-items li {
     padding: 1.5em 1em 1em 1em;
     border-bottom: 1px solid #ddd;
     position: relative;
@@ -45,20 +50,17 @@ a.mail-button {
     min-width: 24px;
     text-align: center;
 }
-#your-orders > li:hover {
+.your-order-items > li:hover {
     background-color: #eee;
 }
-#your-orders .status {
+.your-order-items .status {
     /* padding: 0 1em 1em 1em;
     border: 1px solid #ccc;
-    color: #cb0d07; */
-    border-left: 3px solid #2A5DB0;
-    padding-left: 14px;
+    color: #cb0d07;
+    border-left: 3px solid #DDDDDD;
+    padding-left: 14px; */
 }
-#your-orders .action-this {
-    border-left: 3px solid #cb0d07;
-}
-ul#your-orders {
+ul.your-order-items {
     border-top: 1px solid #ddd;
     margin-top: 0;
 }
@@ -88,11 +90,22 @@ ul#your-orders {
     background-color: #ccc;
 }
 .date-filter {
-    background-color: #ddd;
-    margin-top: 14px;
     padding: 1em;
 }
 input[type=date] {
     border: 1px solid #ccc;
     padding: 5px 3px;
+}
+.your-order {
+    border: 3px solid #ddd;
+    margin-bottom: 1em;
+}
+.your-order h2 {
+    color: #000000;
+}
+.status {
+    text-align: right;
+}
+.morecontent span {
+    display: none;
 }
